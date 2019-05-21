@@ -2,13 +2,17 @@ html
 	overflow-x: hidden
 	&.active
 		overflow: hidden
+*
+	margin: 0
+	padding: 0
 body
 	font-family: 'Encode Sans', sans-serif
 	font-weight: 400
-	font-size: 16px
+	// font-size: 16px
+	font-size: 15px
 	background: #fff
-	@media (max-width: 992px)
-		font-size: 15px
+	// @media (max-width: 992px)
+		// font-size: 15px
 	@media (max-width: 768px)
 		font-size: 14px
 	@media (max-width: 576px)
@@ -21,16 +25,40 @@ a
 	font-size: inherit
 	text-decoration: none
 img
-	display: block
-	margin: 0 auto
 	max-width: 100%
 	height: auto
 hr
 	margin: 0
 	border: .5px solid #D7D7D7
-
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+.title
+	font-size: 30px
+	margin-bottom: 30px
+	text-align: center
+	font-weight: 700
+	@media (max-width: 767.98px)
+		font-size: 24px
+		margin-bottom: 20px
+		font-size: 24px
 @import "icons.sass"
 
 @import "header/index.sass"
 
 @import "footer/index.sass"
+
+@import "banner/banner-home/index.sass"
+
+@import "home/tab/index.sass"
+
+@import "home/ly-do-chon/index.sass"
+
+@import "home/gioi-thieu/index.sass"
+
+@import "home/cam-nhan/index.sass"
+
+@import "home/tin-tuc/index.sass"
+
+@import "home/doi-tac/index.sass"
