@@ -52,7 +52,7 @@ $(document).ready(function () {
 	//home-cam-nhan
 	var homeCamNhan = new Swiper('.home-cam-nhan .swiper-container', {
 		slidesPerView: 1,
-		effect: 'fade',
+		// effect: 'fade',
 		loop: true,
 		autoplay: {
 			delay: 2000,
@@ -121,6 +121,36 @@ $(document).ready(function () {
 		},
 		pagination: {
 			el: '.home-doi-tac .pagination',
+			clickable: true,
+			bulletClass: 'pagination-bullet',
+			bulletActiveClass: 'active',
+		},
+	});
+
+	//about-doi-ngu
+	var aboutDoiNgu = new Swiper('.about-doi-ngu .swiper-container', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		loop: true,
+		autoplay: {
+			delay: 2200,
+			disableOnInteraction: false,
+		},
+		speed: 1000,
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			576: {
+				slidesPerView: 1,
+			}
+		},
+		navigation: {
+			nextEl: '.about-doi-ngu .btn-next',
+			prevEl: '.about-doi-ngu .btn-prev'
+		},
+		pagination: {
+			el: '.about-doi-ngu .pagination',
 			clickable: true,
 			bulletClass: 'pagination-bullet',
 			bulletActiveClass: 'active',
